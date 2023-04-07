@@ -3,15 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "serve": "vue-cli-service serve --mode development",
+    "test": "vue-cli-service serve --mode production",
+    "lint": "vue-cli-service lint",
+    "build": "vue-cli-service build"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "element-ui": "^2.15.13",
     "reset-css": "^5.0.1",
     "vue": "^2.6.14",
-    "vue-router": "^3.5.2"
+    "vue-router": "^3.5.2",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -19,9 +22,15 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "babel-plugin-component": "^1.1.1",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
-    "vue-template-compiler": "^2.6.14"
+    "less": "^4.1.3",
+    "less-loader": "^11.1.0",
+    "postcss-px-to-viewport": "^1.1.1",
+    "vue-particles": "^1.0.9",
+    "vue-template-compiler": "^2.6.14",
+    "webpack-merge": "^5.8.0"
   },
   "eslintConfig": {
     "root": true,
